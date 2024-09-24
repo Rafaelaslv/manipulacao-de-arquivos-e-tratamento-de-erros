@@ -21,12 +21,12 @@ O COMANDO PARA MANIPULAR ARQUIVOS EM PYTHON É O: open("teste.txt", "") - open +
 TEMOS ALGUMAS POSSIBILIDADES DE PERMISSÕES PARA QUANDO VOCÊ ESTIVER TRABALHANDO COM A MANIPULAÇÃO DE ARQUIVOS LOCALMENTE:
 
 R - Raad
-W - Write
+W - Write (adiciona algo ao final do arquivo)
 X - eXecute
 
 A - Append (acrescentar/adicionar algo)
 NÃO SÃO NATIVOS: PERMITE ESCREVER UM ARQUIVO, MAS BASEADO EM BINÁRIOS.
-R+
+R+ (PERMITE LER O ARQUIVO E ESCREVER)
 WB
 
 ---
@@ -43,7 +43,30 @@ conteudo = open("arquivo.txt", "a")
 conteudo.write("Uma linha qualquer\n")
 conteudo.write("Segunda linha\n")
 
+
+COMANDO DE QUEBRA DE LINHA: \n
+
 ---
+
+É IMPORTANTE APÓS AO ABRIR A CONEXÃO COM O BANCO DE DADOS, É IMPORTANTE FECHAR:
+
+conteudo.close()
+
+PARA IMPRIMIR O QUE ESTÁ ESCRITO DENTRO DO ARQUIVO:
+
+print(conteudo.read())
+print(conteudo.readline())
+
+---
+
+### MANIPULAÇÃO DE ARQUIVOS EM NUVEM
+
+
+
+
+
+
+
 
 
 
