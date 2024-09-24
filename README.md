@@ -37,7 +37,15 @@ PARA CRIAR UM ARQUIVO CHAMADO teste.txt:
 
 open("teste.txt", "x")
 
-06:55
+---
+
+conteudo = open("arquivo.txt", "a")
+conteudo.write("Uma linha qualquer\n")
+conteudo.write("Segunda linha\n")
+
+---
+
+
 
 
 
