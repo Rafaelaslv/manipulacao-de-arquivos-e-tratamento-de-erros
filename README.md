@@ -24,6 +24,20 @@ R - Raad
 W - Write
 X - eXecute
 
+A - Append (acrescentar/adicionar algo)
+NÃO SÃO NATIVOS: PERMITE ESCREVER UM ARQUIVO, MAS BASEADO EM BINÁRIOS.
+R+
+WB
+
+---
+
+A PALAVRA open É PADRÃO, NÃO IMPORTA SE VOCÊ QUER ABRIR ou FECHAR.
+
+PARA CRIAR UM ARQUIVO CHAMADO teste.txt:
+
+open("teste.txt", "x")
+
+06:55
 
 
 
