@@ -69,7 +69,32 @@ pip install requests
 
 ---
 
-02:14
+PARA UTILIZAR A BIBLIOTECA TEMOS QUE IMPORTAR ELA PARA DENTRO DA NOSSA APLICAÇÃO.
+
+E PARA FAZER A LEITURA DE ALGUM ARQUIVO DA INTERNET, VAMOS CRIAR UMA VARIÁVEL CHAMADA ler E ELA RECEBERÁ A BIBLIOTECA request + get PARA APONTARM,OS O CAMINHO DO ARQUIVO QUE QUERO PEGAR.
+
+E PARA BUSCAR ARQUIVOS DO TIPO TEXTO PROCURAMOS POR: arquivo filetype.txt
+
+E PARA BUSCAR ARQUIVOS DO TIPO PDF PROCURAMOS POR: arquivo filetype.pdf
+
+PARA LER OS DADOS DO ARQUIVO VAMOS UTILIZAR print(ler) que é o nome da variável.
+
+import requests
+ler = requests.get("https://wiki.sj.ifsc.edu.br/images/4/4a/Ecoshower.txt")
+print(ler)
+
+---
+
+PARA SALVAR/MANIPULAR O ARQUIVO:
+
+arquivo2.txt é o nome do arquivo que será gerado por mim com o conteúdo que está sendo puxado da internet.
+wb - conseguirá escrever algo em modo binário
+e será interpretada como uma variável chamada arquivo
+
+with open("arquivo2.txt", wb") as arquivo:
+    arquivo.write(ler.content) - VOU ESCREVER DENTRO DO ARQUIVO, O CONTEÚDO QUE ESTIVER DENTRO DA VARIÁVEL ler.
+
+---
 
 
 
