@@ -2,6 +2,17 @@ Minhas anotações sobre Manipulação de arquivos e tratamento de erros.
 
 ---
 
+Uma das vantagens do Python é a possibilidade de trabalhar de maneira eficaz com manipulação de arquivos locais ou em nuvem, caso o seu script esteja rodando em alguma página web. Seja da forma que for, a manipulação de arquivos com Python é algo extremamente simples de fazer e consideravelmente útil.
+
+Por meio as funções de manipulação de arquivos, você consegue:
+
+Manipular arquivos locais;
+Mover, inserir, excluir arquivos de pastas ou diretórios;
+Manipular conteúdos de arquivos;
+Importar conteúdos de arquivos da Web;
+
+Algo bastante utilizado com Python é a automação de determinadas tarefas como a realização de back-ups em dispositivos externos ou até mesmo a manipulação de arquivos mediante determinadas ações pré-programadas.
+
 Falaremos sobre manipulação de arquivos, sejam eles em Nuvem/na WEB/na internet ou arquivos no nosso computador(manipulação de arquivos locais).
 
 A manipulação de arquivos no Python é muito masi simples quando comparado à algumas outras linguagens.
@@ -9,6 +20,16 @@ A manipulação de arquivos no Python é muito masi simples quando comparado à 
 QUANDO FALAMOS MANIPULAÇÃO DE ARQUIVOS EM NUVEM, NÃO É QUE VAMOS MEXER EM UM ARQUIVO QUE ESTÁ NA INTERNET, MAS IREMOS ACESSAR PÁGINAS WEB, PUXAR ARQUIVOS PARA DENTRO DO NOSSO COMPUTADOR/APLICAÇÃO EM PYTHON E O ARQUIVO FICARÁ SALVO EM NOSSO COMPUTADOR COMO SE ESTIVÉSSEMOS ACESSANDO ELE NA INTERNET, MAS NA VERDADE APENAS PUXAMOS.
 
 E ISSO É MUITO INTERESSANTE PARA QUEM FAZ ANÁLISE DE DADOS, VOCÊ PODE FAZER UM ALGORITMO QUE VASCULHA A INTERNET INTEIRA EM BUSCA DE ARQUIVOS COM UMA CERTA ESTRUTURA, VAI TRAZNEDO ESSES ARQUIVOS, VAI ALOCANDO EM UM DATA WAREHOUSE/EM UMA ARMAZÉM DE DADOS E DEPOIS VOCÊ PODE RODAR UMA APLICAÇÃO DE ETL PARA VOCÊ PODER FILTRAR INFORMAÇÕES, MENSURAR DADOS, ...
+
+---
+
+### COMO MANIPULAR ARQUIVOS LOCAIS
+
+Como já vimos anteriormente, existem funções específicas para praticamente tudo em Python e claro, existem funções para lidar com arquivos. Uma dessas funções é a open(), responsável por abrir um arquivo e iniciar todos os métodos necessários para realizar praticamente qualquer ação. Caso o arquivo não possa ser aberto, um erro é exibido em tela.
+
+Antes de interagir com os arquivos é importante que você conheça algumas regras de permissões padrões.
+
+,
 
 ---
 
