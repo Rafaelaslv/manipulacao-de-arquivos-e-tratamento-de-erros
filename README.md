@@ -1,4 +1,4 @@
-Minhas anotações sobre Manipulação de arquivos e tratamento de erros.
+### Minhas anotações sobre Manipulação de arquivos e tratamento de erros.
 
 ---
 
@@ -27,9 +27,37 @@ E ISSO É MUITO INTERESSANTE PARA QUEM FAZ ANÁLISE DE DADOS, VOCÊ PODE FAZER U
 
 Como já vimos anteriormente, existem funções específicas para praticamente tudo em Python e claro, existem funções para lidar com arquivos. Uma dessas funções é a open(), responsável por abrir um arquivo e iniciar todos os métodos necessários para realizar praticamente qualquer ação. Caso o arquivo não possa ser aberto, um erro é exibido em tela.
 
-Antes de interagir com os arquivos é importante que você conheça algumas regras de permissões padrões.
+Antes de interagir com os arquivos é importante que você conheça algumas regras de permissões padrões. 
 
-,
+Essas permissões basicamente autorizam que um usuário execute determinadas ações com os arquivos em manipulação. Essas ações são simbolizadas por letras, cada qual com seu respectivo significado.
+
+R (Read)
+W (Write)
+X (eXecute)
+A (Appendix)
+R+ (Red and write)
+WB (Write in binary mode)
+
+---
+
+### LENDO UM ARQUIVO EXISTENTE
+
+Para criar um arquivo em seu computador, você precisa somente executar o comando open(nome_do_arquivo, permissão). O caminho do arquivo deve ser o path absoluto de acesso a ele, iniciando, no caso de computadores com Windows, em “C:/”, caso contrário o arquivo será criado na mesma pasta em que está o seu arquivo Python.
+
+Para fins didáticos, os arquivos criados e manipulados neste módulo estarão na mesma pasta que o arquivo Python a fim de deixar o endereço (path) mais curto e não prejudicar a compreensão.
+
+open("teste.txt", "x")
+
+Observe como a sintaxe é simples! Esta mesma ação em outras linguagens demandaria algumas boas linhas de programação. Compreenda que caso o arquivo mencionado não exista, a função, com a permissão x, irá criá-lo.
+
+Entenda que para manipular um arquivo, primeiramente você precisa estar com ele aberto - o que é bastante óbvio. Isso significa que a primeira coisa que você fará antes de iniciar as operações de inserção, edição ou exclusão de informações nos arquivos, será abrí-lo por meio da função open().
+
+Da mesma forma como você pode simplesmente executar os comandos, você também pode atribuí-los a variáveis, de forma que seja possível manipular com mais facilidade os dados posteriormente, como por exemplo, imprimir os dados dispostos em um arquivo em questão.
+
+conteudo = open("arquivo.txt" , "r")
+print(conteudo.read())
+
+!!!!!!!!!!!!!!!!
 
 ---
 
