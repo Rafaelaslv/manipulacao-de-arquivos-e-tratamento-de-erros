@@ -59,6 +59,7 @@ print(conteudo.read())
 
 !!!!!!!!!!!!!!!!
 
+PAREI NO PARAGRAFO: Com estas linhas especificamente, o arquivo nomeado “arquivo.txt” será lido (permissão “r”) e o seu conteúdo será adicionado à variável “conteúdo”. Já na linha 21, será impresso os valores armazenados em “conteudo”, por meio do método read(). Intuitivo, não é mesmo?
 ---
 
 O ERRO ACABA ACONTECENDO SE VOCÊ ERRAR ALGUMA SINTAXE, MAS EM RELAÇÃO À EXCEÇÃO CONSEGUIMOS BLINDAR O ALGORITMO PARA QUE ISSO NÃO ACONTEÇA.
